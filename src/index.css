@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-hub-green: #047857;
+    --color-hub-green-dark: #064e3b;
+    --color-hub-gold: #d97706;
+    --color-hub-gold-light: #f59e0b;
+    --color-hub-gold-metallic: #c99736;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #fafaf9;
+    color: #1c1917;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Green, Gold and White Signature Background Themes */
+.bg-theme-triad {
+  background: 
+    radial-gradient(circle at 10% 0%, rgba(5, 150, 105, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(217, 119, 6, 0.08) 0%, transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #f7fdf9 40%, #fffdf7 70%, #ffffff 100%);
+}
+
+.bg-hero-green-gold {
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.22) 0%, transparent 50%),
+    linear-gradient(135deg, #022c22 0%, #064e3b 45%, #0f392b 75%, #1c1917 100%);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(to right, #059669, #d97706, #059669) 1;
+}
+
+.text-gold {
+  color: #b45309;
+}
+
+.bg-gold-metallic {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+}
